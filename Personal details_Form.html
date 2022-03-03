@@ -1,0 +1,126 @@
+
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Personal Details</title>
+
+        <style>
+          .container{
+                background-color: #d7f542;
+                margin: 0px 350px;
+                padding: 0px 170px;
+                border: red solid 3px;
+            }
+             .item{
+                margin: 10px;
+                padding: 5px;
+            }
+            h1{
+                color: red;
+                text-align: center;
+            }
+            button {
+                background-color: orangered; 
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+            input{
+                margin-left: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+
+        
+        <h1>Personal Details</h1>
+
+        <form action="">
+            <div class="item">
+            <label  for="name">Name: </label>
+            <input type="text" id="name" name="Name" style="margin-left: 50px;"> <br>
+            </div>
+
+            <div class="item">
+            <label for="password">Password: </label>
+            <input type="password" id="password" name="Password" style="margin-left: 28px;"> <br>
+            </div>
+
+            <div class="item">
+                <label for="email">E-mail id: </label>
+                <input type="email" id="email" name="Email" style="margin-left: 30px;"> <br>
+            </div>
+
+
+            <div class="item" style="margin-left: 30px;">
+                <label>Gender: </label>
+                <input type="radio" id="sex1" name="sex" value="Male">
+                <label for="sex1">Male</label> 
+                <input type="radio" id="sex2" name="sex" value="Female">
+                <label for="sex2">Female</label>
+                <br>
+            </div>
+
+            <div class="item">
+            <label for="contact" >Contact#: </label>
+            <input type="text" id="contact" name="Contact" style="margin-left: 32px;"> <br>
+            </div>
+
+            <h1>Educational Qualification</h1>
+
+            <div class="item">
+            <label for="degree" >Degree: </label>
+            <select name="degree" id="degree" style="margin-left: 42px;">
+                <option value="">--Select Group--</option>
+                <option value="science">Science</option>
+                <option value="commerce">Commerce</option>
+                <option value="arts">Arts</option>
+            </select> <br>
+            </div>
+
+            <div class="item">
+            <label for="Engineering">Engineering:</label>
+            <select name="Engineering" id="Engineering" style="margin-left: 10px;">
+                <option value="">-- Select Group--</option>
+                <option value="CSE">CSE</option>
+                <option value="EEE">EEE</option>
+                <option value="IPE">IPE</option>
+                <option value="Civil">CIvil</option>
+            </select> <br>
+
+            <div class="item" style="margin-left: -5px;">
+                <label>Hobbies: </label>
+                <input type="radio" id="hobby1" name="hobby" value="Playing chess">
+                <label for="hobby1">Playing chess</label> 
+                <input type="radio" id="hobby2" name="hobby" value="Reading Books">
+                <label for="hobby2">Reading Books</label>
+                <br>
+            </div>
+
+            </div>
+            <h1>Address</h1>
+            <div class="item">
+            <label for="comments"></label>
+            <textarea name="comments" id="comments" cols="50" rows="7"></textarea> <br>
+            </div>
+
+            <div class="item">
+                <label for="resume">Attach Resume: </label>
+                <input type="file" name="resume" id="resume">
+            </div>
+            <div style="margin-left: 120px; margin-bottom:5px;">
+                <button>Submit</button>
+            </div>
+            
+
+        </form>
+    </div>
+    </body>
+</html>
