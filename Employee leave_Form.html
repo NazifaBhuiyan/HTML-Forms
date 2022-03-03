@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Form</title>
+    <style>
+      .required-field::after {
+            content: "*";
+            color: red;
+      }
+        html,body {
+        height:100%;
+        width:100%;
+        margin:0;
+      }
+      body {
+        display:flex;
+      }
+      form {
+        margin:auto;/* nice thing of auto margin if display:flex; it center both horizontal and vertical :) */
+        border: 1px solid #e6df60;
+      }
+
+      .item{
+          margin: 10px 20px;
+          padding: 5px;
+          font-weight: bold;
+      }
+      .button{
+          background-color: whitesmoke;
+      }
+      button{
+        border: 1px solid #e6df60;
+        background-color: #e6df60;
+        color: white;
+        margin: 20px 0;
+        padding: 5px;
+        font-size: 20px;
+        
+      }
+      span{
+        margin-left: 180px;
+      }
+    </style>
+</head>
+<body>
+
+
+    <form action="">
+        <div style="background-color: #e6df60;">
+            <h1 style="display: inline-block; margin: 5px 0 5px 20px;">Leave Form</h1>
+            <select name="more-action" id="more-action" style="margin-left: 20px; border: none; background-color: #e6df60;">
+                <option value="more-action">More Actions</option>
+                <option value="more-action">More Actions</option>
+            </select>
+        </div>
+        <div class="item">
+        <label  for="email">Employee Email </label>
+        <select type="email" id="email" name="email" style="margin-left: 63px; margin-right: 100px;"> 
+              <option value="">appuser@zohocreator.com</option>
+              <option value="appbuyer">Shumon@zohocreator.com</option>
+              <option value="appdeveloper">Pranto@zohocreator.com</option>
+            </select> <br>
+        </div>
+
+        <div class="item">
+            <label  for="em-id">Employee Id </label>
+            <input type="text" id="em-id" name="em-id" value="232" style="margin-left: 88px; margin-right: 100px"> <br>
+          </div>
+
+
+        <div class="item">
+            <label  for="name">Employee name </label>
+            <input type="text" id="name" name="name" value="appuser" style="margin-left: 65px; margin-right: 100px"> <br>
+        </div>
+
+        <div class="item">
+            <label for="designation">Designation </label>
+            <input type="text" id="designation" name="designation" value="Team Leader" style="margin-left: 95px; margin-right: 100px"> <br>
+        </div> 
+         <div class="item">
+            <label for="leave" class="required-field">Leave type </label>
+            <select type="text" id="leave" name="leave" style="margin-left: 91px; margin-right: 100px" >
+                <option value="">-Select-</option>
+                <option value="matrtnity">Maternity</option>
+                <option value="medical">Medical</option>
+            </select> <br>
+        </div>    
+        
+        <div class="item">
+        <label for="from" class="required-field">From </label>
+        <input type="date" id="from" name="from" style="margin-left: 128px; margin-right: 100px"> <br>
+        </div>
+
+        <div class="item">
+            <label for="to" class="required-field">To </label>
+            <input type="date" id="to" name="to" style="margin-left: 148px; margin-right: 100px"> <br>
+        </div>
+
+        <div class="item">
+            <label for="days">No. of Days </label>
+            <input type="text" id="days" name="days" style="margin-left: 100px; margin-right: 100px"> <br>
+        </div>
+
+        <div class="item">
+            <label for="reason" >Reason</label> <br>
+            <textarea name="reason" id="reason" cols="30" rows="10" style="margin-left: 180px;"></textarea> <br>
+        </div>
+         <div class="button"> 
+         <span>   
+         <button type="submit">Submit</button>
+         <button type="reset">Reset</button>
+        </span>
+        </div>   
+    </form>
+    
+</body>
+</html>
